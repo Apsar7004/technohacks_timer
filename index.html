@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Timer</title>
+</head>
+<body>
+    <header>COUNTDOWN &ThinSpace; TIMER </header>
+    <main>
+        <div class="displayTime">
+            <h2 id="time">SET COUNT</h2>
+        
+        </div>
+        <input id="inputTime" type="time" step="1" step="3600" onblur="manualTime()" value="00:00:00" >
+        
+        <h1 id="timeSpecifiers"></h1>
+        <div class="actions">
+            <button class="functions" id="nothide" onclick="executecount()">Start</button>
+            <div class="hidden" id="hidden">
+                <button id="toggler" class="functions" onclick="pause()" value=true>Stop</button>
+                <button class="functions" onclick="begin()">Reset</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;aps
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
